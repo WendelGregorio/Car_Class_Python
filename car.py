@@ -52,7 +52,7 @@ class Car(object):
     def set_year(self, new_year):
         """Assign a new year to vehicle"""
         if type(new_year) is int:
-            self.year = new_year
+            self.year = int(new_year)
         elif type(new_year) is str:
             try:
                 self.year = new_year
